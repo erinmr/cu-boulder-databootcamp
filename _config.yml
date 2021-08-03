@@ -22,7 +22,7 @@ title: Erin Robinson's CU-Boulder Data Bootcamp Project
 email: erin.robinson-1@colorado.edu
 description: >- # this means to ignore newlines until "baseurl:"
   This is a site and repo for my CU-Boulder Data Bootcamp activities.
-baseurl: "/pages-sample" # the subpath of your site, e.g. /blog
+baseurl: "/cu-boulder-databootcamp" # the subpath of your site, e.g. /blog
 url: "https://erinmr.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: connector_erin
 github_username:  erinmr
