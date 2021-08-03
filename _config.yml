@@ -28,7 +28,7 @@ twitter_username: connector_erin
 github_username:  erinmr
 
 # Build settings
-theme: minima
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
 
