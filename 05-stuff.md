@@ -50,3 +50,11 @@ Wow, you got that off the Internet? We'll need to have a look inside you with th
 I'm sorry, guys. I never meant to hurt you. Just to destroy everything you ever believed in. Guards! Bring me the forms I need to fill out to have her taken away!
 
 WINDMILLS DO NOT WORK THAT WAY! GOOD NIGHT! You guys aren't Santa! You're not even robots. How dare you lie in front of Jesus? Hey, whatcha watching? We'll need to have a look inside you with this camera.
+
+#### Links
+
+- [Markdown](02-markdown-examples)
+- [Images](03-images-examples)
+- [Embeds](04-embeds-examples)
+- [FAIRsFAIR Teaching Resources](https://docs.google.com/document/d/1_xs3mMDKGybSbOxHBslbH8qpTaf4gjuW6z_GSZYMk_c/edit#heading=h.3j2qqm3) 
+- [STAC Landsat tutorial](https://pystac.readthedocs.io/en/latest/tutorials/creating-a-landsat-stac.html)
