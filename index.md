@@ -8,7 +8,9 @@ I took the [CU-Boulder Data Bootcamp](https://cu-boulder-crdds.github.io/data_bo
 
 
 ## My Project 
-Discussion 
+Thinking of using https://scholar.colorado.edu/concern/articles/mw22v6063
+
+### Discussion 
 - What are some examples of scholarly data and ethical concerns do you handle/encounter
 - Power and justice resonated 
 - What does the dataset capture 
