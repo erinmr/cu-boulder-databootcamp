@@ -1,0 +1,112 @@
+---
+title: "DataVizAssessment"
+author: "Erin Robinson"
+date: "8/4/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Practice 
+
+<https://jayholster.shinyapps.io/DataVisualizationAssessment/#section-assessment>
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+library(tidyverse)
+qplot(data = mtcars, x = as.factor(cyl), y= mpg, geom = 'boxplot')
+```
+
+## Violin Plots with qplot 
+
+```{r}
+library(tidyverse)
+qplot(data = mtcars, x = as.factor(cyl), y= mpg, geom = 'violin')
+```
+
+```{r}
+ggplot(data = mtcars, aes(x = as.factor(cyl), y = mpg)) + 
+  geom_violin()
+  
+```
+
+```{r}
+ggplot(data = mtcars, aes(x = hp)) + 
+  geom_histogram(bins = 60, color = 'grey', fill = 'blue') + 
+  ggtitle("Distibution of Horsepower for Cars") + 
+  xlab("Horsepower (hp)") 
+
+```
+
+```{r}
+ggplot(data = mtcars, aes(x = mpg, y = hp, color = as.factor(cyl))) + 
+  geom_point() + 
+  ggtitle("Scatterplot of Miles per Gallon vs HP for Cars") + 
+  xlab("MPG") + ylab("HP")
+```
+
+```{r}
+ggplot(data = mtcars, aes(x = mpg, y = hp, color = as.factor(cyl))) + 
+  geom_point() + geom_rug() +
+  ggtitle("Scatterplot of Miles per Gallon vs HP for Cars") + 
+  xlab("MPG") + ylab("HP")
+```
+
+```{r}
+ggplot(data = mtcars, aes(x = mpg, y = hp)) + 
+  geom_point() + geom_smooth(method = 'lm') +
+  ggtitle("Scatterplot of Miles per Gallon vs HP for Cars") + 
+  xlab("MPG") + ylab("HP")
+```
+
+```{r}
+ggplot(data = mtcars, aes(x = as.factor(cyl), y = mpg, color = as.factor(cyl))) + 
+  geom_boxplot(notch = T) +
+  ggtitle("Boxplot of Cyl vs MPG for Cars") + 
+  xlab("Cyl") + ylab("MPG")
+
+```
+
+```{r}
+library(tidyverse)
+library(ggpubr)
+plot1 <- ggplot(data = mtcars, aes(x = as.factor(cyl), y = mpg, color = as.factor(cyl))) + 
+  geom_boxplot(notch = T) +
+  ggtitle("Boxplot of Cyl vs MPG for Cars") + 
+  xlab("Cyl") + ylab("MPG")
+  
+plot2 <- ggplot(data = mtcars, aes(x = mpg, y = hp, color = as.factor(cyl))) + 
+  geom_point() + geom_rug() +
+  ggtitle("Scatterplot of Miles per Gallon vs HP for Cars") + 
+  xlab("MPG") + ylab("HP")
+
+ggarrange(plot1,plot2,ncol=2)
+
+```
+
+## Final assessment 
+
+```{r}
+
+
+library(tidyverse)
+library(fivethirtyeight)
+data <- US_births_1994_2003
+
+data_grouped <- group_by(data, day_of_week, year)
+data_max_day_year <- filter(data_grouped, births==max(births))
+
+
+ggplot(data_grouped, aes(x = day_of_week, y = births, fill = day_of_week)) +
+  geom_violin() + 
+  ggtitle("Distibution of Births on Each Day") + 
+  xlab("Day of the Week") + ylab("Number of Births") + stat_summary(fun = mean, geom = "point", color = 'white') + labs(fill='Day') 
+
+```
+
+## 
