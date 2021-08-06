@@ -1,6 +1,6 @@
 ---
 layout: home
-title: 
+title: Home
 list_title: Daily Recaps
 ---
 
