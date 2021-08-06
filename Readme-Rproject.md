@@ -5,8 +5,7 @@ output:
   md_document:
     preserve_yaml: true
     variant: markdown_github
-title: Readme for Data from State of Open at the University of Colorado
-  Boulder Report
+title: Data Readme
 ---
 
 ## General Information
@@ -58,23 +57,23 @@ Johnson, A., Caillet, R., Cantrell, M. H., & Mika, K. (2018). Data from
 
 ## Data & File Overview
 
-1\. File List:
+1.  File List:
 
-A. Filename: CUBoulderOAArticles2012
+    1.  Filename: CUBoulderOAArticles2012
 
-B. Filename: CUBoulderOAArticles2013
+    2.  Filename: CUBoulderOAArticles2013
 
-C. Filename: CUBoulderOAArticles2014
+    3.  Filename: CUBoulderOAArticles2014
 
-D. Filename: CUBoulderOAArticles2015
+    4.  Filename: CUBoulderOAArticles2015
 
-E. Filename: CUBoulderOAArticles2016
+    5.  Filename: CUBoulderOAArticles2016
 
-F. Filename: CUBoulderOAArticles2017
+    6.  Filename: CUBoulderOAArticles2017
 
-G. Filename: CUBoulderOAFund2013_2017
+    7.  Filename: CUBoulderOAFund2013_2017
 
-H. Filename: CUBoulderPublishedData2014_2017
+    8.  Filename: CUBoulderPublishedData2014_2017
 
 2\. Relationship between files:
 
@@ -83,21 +82,7 @@ No relationship specified
 ## Methodological Information
 
 ``` r
-library(tidyverse)
-```
-
-    ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──
-
-    ## ✓ ggplot2 3.3.3     ✓ purrr   0.3.4
-    ## ✓ tibble  3.1.0     ✓ dplyr   1.0.7
-    ## ✓ tidyr   1.1.3     ✓ stringr 1.4.0
-    ## ✓ readr   1.4.0     ✓ forcats 0.5.1
-
-    ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-    ## x dplyr::filter() masks stats::filter()
-    ## x dplyr::lag()    masks stats::lag()
-
-``` r
+#library(tidyverse)
 # Sample code to read in  files below and review the data Commented out because it doesn't need to run for the readme. For each file below the string can be updated for the file name
 # data <- read.csv('data/StateOfOpenCUBoulderData/CUBoulderPublishedData2014_2017.csv')
 # Extract column (variable) names
@@ -118,60 +103,77 @@ library(tidyverse)
 
 3\. Variable List: Descriptions added by E. Robinson
 
-1
-“Department” - Department at CU-Boulder
+-   
+    1
+    “Department” - Department at CU-Boulder
 
-2
-“DOI” - Digital Object Identifier
+-   
+    2
+    “DOI” - Digital Object Identifier
 
-3
-“eISSN” - Electronic International Standard Serial Number
+-   
+    3
+    “eISSN” - Electronic International Standard Serial Number
 
-4
-“ISSN” - International Standard Serial Number
+-   
+    4
+    “ISSN” - International Standard Serial Number
 
-5
-“Issue” - Journal Issue
+-   
+    5
+    “Issue” - Journal Issue
 
-6
-“Title.of.Journal”
+-   
+    6
+    “Title.of.Journal”
 
-7
-“Language” - Language of publication. Generally English or eng
+-   
+    7
+    “Language” - Language of publication. Generally English or eng
 
-8
-“Pagination..start.page.” - Article start page
+-   
+    8
+    “Pagination..start.page.” - Article start page
 
-9
-“Pagination..end.page.” - Article end page
+-   
+    9
+    “Pagination..end.page.” - Article end page
 
-10
-“Pagination..page.count.” - Article number of pages
+-   
+    10
+    “Pagination..page.count.” - Article number of pages
 
-11
-“Publication.date.OR.Publication.date.or.Presentation.Date.OR.Presentation.date.OR.Presented.date.OR.Date.awarded.OR.Date”
-- Variety of different kinds of dates in single column. Format is Year
-or YYYY-MM or MM/DD/YY
+-   
+    11
+    “Publication.date.OR.Publication.date.or.Presentation.Date.OR.Presentation.date.OR.Presented.date.OR.Date.awarded.OR.Date” -
+    Variety of different kinds of dates in single column. Format is Year
+    or YYYY-MM or MM/DD/YY
 
-12
-“Publisher”
+-   
+    12
+    “Publisher”
 
-13
-“Title” - Title of Article
+-   
+    13
+    “Title” - Title of Article
 
-14
-“Volume”
+-   
+    14
+    “Volume”
 
-15
-“Indexed.in.DOAJ” Is the article indexed in the Directory of Open Access
-Journals
+-   
+    15
+    “Indexed.in.DOAJ” Is the article indexed in the Directory of Open
+    Access Journals
 
-16
-“DOAJ.CC.Licence” Indicates if the article has a CC license with type CC
-BY, CC BY-NC-SA, CC BY-NC - ND
+-   
+    16
+    “DOAJ.CC.Licence” Indicates if the article has a CC license with
+    type CC BY, CC BY-NC-SA, CC BY-NC - ND
 
-17
-“Romeo.colour” ??
+-   
+    17
+    “Romeo.colour” ??
 
 4\. Data codes (e.g., N/A = Not applicable):Unknown are blank
 
@@ -187,60 +189,77 @@ BY, CC BY-NC-SA, CC BY-NC - ND
 
 3\. Variable List: Descriptions added by E. Robinson
 
-1
-“Department” - Department at CU-Boulder
+-   
+    1
+    “Department” - Department at CU-Boulder
 
-2
-“DOI” - Digital Object Identifier
+-   
+    2
+    “DOI” - Digital Object Identifier
 
-3
-“eISSN” - Electronic International Standard Serial Number
+-   
+    3
+    “eISSN” - Electronic International Standard Serial Number
 
-4
-“ISSN” - International Standard Serial Number
+-   
+    4
+    “ISSN” - International Standard Serial Number
 
-5
-“Issue” - Journal Issue
+-   
+    5
+    “Issue” - Journal Issue
 
-6
-“Title.of.Journal”
+-   
+    6
+    “Title.of.Journal”
 
-7
-“Language” - Language of publication. Generally English or eng
+-   
+    7
+    “Language” - Language of publication. Generally English or eng
 
-8
-“Pagination..start.page.” - Article start page
+-   
+    8
+    “Pagination..start.page.” - Article start page
 
-9
-“Pagination..end.page.” - Article end page
+-   
+    9
+    “Pagination..end.page.” - Article end page
 
-10
-“Pagination..page.count.” - Article number of pages
+-   
+    10
+    “Pagination..page.count.” - Article number of pages
 
-11
-“Publication.date.OR.Publication.date.or.Presentation.Date.OR.Presentation.date.OR.Presented.date.OR.Date.awarded.OR.Date”
-- Variety of different kinds of dates in single column. Format is Year
-or YYYY-MM or MM/DD/YY
+-   
+    11
+    “Publication.date.OR.Publication.date.or.Presentation.Date.OR.Presentation.date.OR.Presented.date.OR.Date.awarded.OR.Date” -
+    Variety of different kinds of dates in single column. Format is Year
+    or YYYY-MM or MM/DD/YY
 
-12
-“Publisher”
+-   
+    12
+    “Publisher”
 
-13
-“Title” - Title of Article
+-   
+    13
+    “Title” - Title of Article
 
-14
-“Volume”
+-   
+    14
+    “Volume”
 
-15
-“Indexed.in.DOAJ” Is the article indexed in the Directory of Open Access
-Journals
+-   
+    15
+    “Indexed.in.DOAJ” Is the article indexed in the Directory of Open
+    Access Journals
 
-16
-“DOAJ.CC.Licence” Indicates if the article has a CC license with type CC
-BY, CC BY-NC-SA, CC BY-NC - ND
+-   
+    16
+    “DOAJ.CC.Licence” Indicates if the article has a CC license with
+    type CC BY, CC BY-NC-SA, CC BY-NC - ND
 
-17
-“Romeo.colour” ??
+-   
+    17
+    “Romeo.colour” ??
 
 4\. Data codes (e.g., N/A = Not applicable):Unknown are blank
 
@@ -256,60 +275,77 @@ BY, CC BY-NC-SA, CC BY-NC - ND
 
 3\. Variable List: Descriptions added by E. Robinson
 
-1
-“Department” - Department at CU-Boulder
+-   
+    1
+    “Department” - Department at CU-Boulder
 
-2
-“DOI” - Digital Object Identifier
+-   
+    2
+    “DOI” - Digital Object Identifier
 
-3
-“eISSN” - Electronic International Standard Serial Number
+-   
+    3
+    “eISSN” - Electronic International Standard Serial Number
 
-4
-“ISSN” - International Standard Serial Number
+-   
+    4
+    “ISSN” - International Standard Serial Number
 
-5
-“Issue” - Journal Issue
+-   
+    5
+    “Issue” - Journal Issue
 
-6
-“Title.of.Journal”
+-   
+    6
+    “Title.of.Journal”
 
-7
-“Language” - Language of publication. Generally English or eng
+-   
+    7
+    “Language” - Language of publication. Generally English or eng
 
-8
-“Pagination..start.page.” - Article start page
+-   
+    8
+    “Pagination..start.page.” - Article start page
 
-9
-“Pagination..end.page.” - Article end page
+-   
+    9
+    “Pagination..end.page.” - Article end page
 
-10
-“Pagination..page.count.” - Article number of pages
+-   
+    10
+    “Pagination..page.count.” - Article number of pages
 
-11
-“Publication.date.OR.Publication.date.or.Presentation.Date.OR.Presentation.date.OR.Presented.date.OR.Date.awarded.OR.Date”
-- Variety of different kinds of dates in single column. Format is Year
-or YYYY-MM or MM/DD/YY
+-   
+    11
+    “Publication.date.OR.Publication.date.or.Presentation.Date.OR.Presentation.date.OR.Presented.date.OR.Date.awarded.OR.Date” -
+    Variety of different kinds of dates in single column. Format is Year
+    or YYYY-MM or MM/DD/YY
 
-12
-“Publisher”
+-   
+    12
+    “Publisher”
 
-13
-“Title” - Title of Article
+-   
+    13
+    “Title” - Title of Article
 
-14
-“Volume”
+-   
+    14
+    “Volume”
 
-15
-“Indexed.in.DOAJ” Is the article indexed in the Directory of Open Access
-Journals
+-   
+    15
+    “Indexed.in.DOAJ” Is the article indexed in the Directory of Open
+    Access Journals
 
-16
-“DOAJ.CC.Licence” Indicates if the article has a CC license with type CC
-BY, CC BY-NC-SA, CC BY-NC - ND
+-   
+    16
+    “DOAJ.CC.Licence” Indicates if the article has a CC license with
+    type CC BY, CC BY-NC-SA, CC BY-NC - ND
 
-17
-“Romeo.colour” ??
+-   
+    17
+    “Romeo.colour” ??
 
 4\. Data codes (e.g., N/A = Not applicable):Unknown are blank
 
@@ -326,59 +362,76 @@ BY, CC BY-NC-SA, CC BY-NC - ND
 3\. Variable List: Descriptions added by E. Robinson (NOTE Publication
 date was simplified in 2015)
 
-1
-“Department” - Department at CU-Boulder
+-   
+    1
+    “Department” - Department at CU-Boulder
 
-2
-“DOI” - Digital Object Identifier
+-   
+    2
+    “DOI” - Digital Object Identifier
 
-3
-“eISSN” - Electronic International Standard Serial Number
+-   
+    3
+    “eISSN” - Electronic International Standard Serial Number
 
-4
-“ISSN” - International Standard Serial Number
+-   
+    4
+    “ISSN” - International Standard Serial Number
 
-5
-“Issue” - Journal Issue
+-   
+    5
+    “Issue” - Journal Issue
 
-6
-“Title.of.Journal”
+-   
+    6
+    “Title.of.Journal”
 
-7
-“Language” - Language of publication. Generally English or eng
+-   
+    7
+    “Language” - Language of publication. Generally English or eng
 
-8
-“Pagination..start.page.” - Article start page
+-   
+    8
+    “Pagination..start.page.” - Article start page
 
-9
-“Pagination..end.page.” - Article end page
+-   
+    9
+    “Pagination..end.page.” - Article end page
 
-10
-“Pagination..page.count.” - Article number of pages
+-   
+    10
+    “Pagination..page.count.” - Article number of pages
 
-11
-“Publication.date” - Variety of different kinds of dates in single
-column. Format is Year or YYYY-MM or MM/DD/YY
+-   
+    11
+    “Publication.date” - Variety of different kinds of dates in single
+    column. Format is Year or YYYY-MM or MM/DD/YY
 
-12
-“Publisher”
+-   
+    12
+    “Publisher”
 
-13
-“Title” - Title of Article
+-   
+    13
+    “Title” - Title of Article
 
-14
-“Volume”
+-   
+    14
+    “Volume”
 
-15
-“Indexed.in.DOAJ” Is the article indexed in the Directory of Open Access
-Journals
+-   
+    15
+    “Indexed.in.DOAJ” Is the article indexed in the Directory of Open
+    Access Journals
 
-16
-“DOAJ.CC.Licence” Indicates if the article has a CC license with type CC
-BY, CC BY-NC-SA, CC BY-NC - ND
+-   
+    16
+    “DOAJ.CC.Licence” Indicates if the article has a CC license with
+    type CC BY, CC BY-NC-SA, CC BY-NC - ND
 
-17
-“Romeo.colour” ??
+-   
+    17
+    “Romeo.colour” ??
 
 4\. Data codes (e.g., N/A = Not applicable):Unknown are blank
 
@@ -395,59 +448,76 @@ BY, CC BY-NC-SA, CC BY-NC - ND
 3\. Variable List: Descriptions added by E. Robinson (NOTE Publication
 date changes back to 2012 variables)
 
-1
-“Department” - Department at CU-Boulder
+-   
+    1
+    “Department” - Department at CU-Boulder
 
-2
-“DOI” - Digital Object Identifier
+-   
+    2
+    “DOI” - Digital Object Identifier
 
-3
-“eISSN” - Electronic International Standard Serial Number
+-   
+    3
+    “eISSN” - Electronic International Standard Serial Number
 
-4
-“ISSN” - International Standard Serial Number
+-   
+    4
+    “ISSN” - International Standard Serial Number
 
-5
-“Issue” - Journal Issue
+-   
+    5
+    “Issue” - Journal Issue
 
-6
-“Title.of.Journal”
+-   
+    6
+    “Title.of.Journal”
 
-7
-“Language” - Language of publication. Generally English or eng
+-   
+    7
+    “Language” - Language of publication. Generally English or eng
 
-8
-“Pagination..start.page.” - Article start page
+-   
+    8
+    “Pagination..start.page.” - Article start page
 
-9
-“Pagination..end.page.” - Article end page
+-   
+    9
+    “Pagination..end.page.” - Article end page
 
-10
-“Pagination..page.count.” - Article number of pages
+-   
+    10
+    “Pagination..page.count.” - Article number of pages
 
-11
-“Publication.date” - Variety of different kinds of dates in single
-column. Format is Year or YYYY-MM or MM/DD/YY
+-   
+    11
+    “Publication.date” - Variety of different kinds of dates in single
+    column. Format is Year or YYYY-MM or MM/DD/YY
 
-12
-“Publisher”
+-   
+    12
+    “Publisher”
 
-13
-“Title” - Title of Article
+-   
+    13
+    “Title” - Title of Article
 
-14
-“Volume”
+-   
+    14
+    “Volume”
 
-15
-“Indexed.in.DOAJ” Is the article indexed in the Directory of Open Access
-Journals
+-   
+    15
+    “Indexed.in.DOAJ” Is the article indexed in the Directory of Open
+    Access Journals
 
-16
-“DOAJ.CC.Licence” Indicates if the article has a CC license with type CC
-BY, CC BY-NC-SA, CC BY-NC - ND
+-   
+    16
+    “DOAJ.CC.Licence” Indicates if the article has a CC license with
+    type CC BY, CC BY-NC-SA, CC BY-NC - ND
 
-17
-“Romeo.colour” ??
+-   
+    17
+    “Romeo.colour” ??
 
 4\. Data codes (e.g., N/A = Not applicable):Unknown are blank
 
@@ -464,59 +534,76 @@ BY, CC BY-NC-SA, CC BY-NC - ND
 3\. Variable List: Descriptions added by E. Robinson (NOTE Publication
 date was simplified again in 2017)
 
-1
-“Department” - Department at CU-Boulder
+-   
+    1
+    “Department” - Department at CU-Boulder
 
-2
-“DOI” - Digital Object Identifier
+-   
+    2
+    “DOI” - Digital Object Identifier
 
-3
-“eISSN” - Electronic International Standard Serial Number
+-   
+    3
+    “eISSN” - Electronic International Standard Serial Number
 
-4
-“ISSN” - International Standard Serial Number
+-   
+    4
+    “ISSN” - International Standard Serial Number
 
-5
-“Issue” - Journal Issue
+-   
+    5
+    “Issue” - Journal Issue
 
-6
-“Title.of.Journal”
+-   
+    6
+    “Title.of.Journal”
 
-7
-“Language” - Language of publication. Generally English or eng
+-   
+    7
+    “Language” - Language of publication. Generally English or eng
 
-8
-“Pagination..start.page.” - Article start page
+-   
+    8
+    “Pagination..start.page.” - Article start page
 
-9
-“Pagination..end.page.” - Article end page
+-   
+    9
+    “Pagination..end.page.” - Article end page
 
-10
-“Pagination..page.count.” - Article number of pages
+-   
+    10
+    “Pagination..page.count.” - Article number of pages
 
-11
-“Publication.date” - Variety of different kinds of dates in single
-column. Format is Year or YYYY-MM or MM/DD/YY
+-   
+    11
+    “Publication.date” - Variety of different kinds of dates in single
+    column. Format is Year or YYYY-MM or MM/DD/YY
 
-12
-“Publisher”
+-   
+    12
+    “Publisher”
 
-13
-“Title” - Title of Article
+-   
+    13
+    “Title” - Title of Article
 
-14
-“Volume”
+-   
+    14
+    “Volume”
 
-15
-“Indexed.in.DOAJ” Is the article indexed in the Directory of Open Access
-Journals
+-   
+    15
+    “Indexed.in.DOAJ” Is the article indexed in the Directory of Open
+    Access Journals
 
-16
-“DOAJ.CC.Licence” Indicates if the article has a CC license with type CC
-BY, CC BY-NC-SA, CC BY-NC - ND
+-   
+    16
+    “DOAJ.CC.Licence” Indicates if the article has a CC license with
+    type CC BY, CC BY-NC-SA, CC BY-NC - ND
 
-17
-“Romeo.colour” ??
+-   
+    17
+    “Romeo.colour” ??
 
 4\. Data codes (e.g., N/A = Not applicable):Unknown are blank
 
