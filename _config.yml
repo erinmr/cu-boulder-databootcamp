@@ -33,10 +33,10 @@ plugins:
   - jekyll-feed
 
 header_pages:
-  - about
-  - R-Project-Badge.html
-  - Readme-Rproject.html
-  - R_codeexample.html
+  - about.md
+  - R-Project-Badge.md
+  - Readme-Rproject.md
+  - R_codeexample.md
  # - Data Readme
 
 # Exclude from processing.
