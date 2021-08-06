@@ -34,7 +34,7 @@ plugins:
 
 header_pages:
   - R-Project-Badge
-  - Readme-Rproject
+  - Data Readme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
