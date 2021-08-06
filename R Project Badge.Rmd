@@ -136,12 +136,3 @@ doi17b <-nrow(filter(doi17a, DOI...yes.or.no =='Yes'))
 
 cat("Print results for Finding 4 -> Published datasets became a reportable scholarly activity in the annual Faculty Report of Professional Activities in 2014, and faculty reported", data17, "data sets in 2017 (up from", data14, "in 2014) with", doi17b," of these citations including Digital Object Identifiers (DOIs).")
 ```
-
-```{r}
-library(tidyverse)
-# Read in CUBoulderOAFund2013_2017 and review the data 
-data <- read.csv('data/StateOfOpenCUBoulderData/CUBoulderPublishedData2014_2017.csv')
-colnames(data)
-summary(data)
-
-```
