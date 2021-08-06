@@ -32,8 +32,11 @@ theme: minima
 plugins:
   - jekyll-feed
 
-#header_pages:
- # - R-Project-Badge
+header_pages:
+  - about
+  - R-Project-Badge.html
+  - Readme-Rproject.html
+  - R_codeexample.html
  # - Data Readme
 
 # Exclude from processing.
