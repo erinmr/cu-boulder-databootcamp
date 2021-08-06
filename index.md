@@ -1,5 +1,6 @@
 ---
 layout: home
+title: 
 list_title: Daily Recaps
 ---
 
