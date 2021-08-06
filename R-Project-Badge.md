@@ -203,3 +203,44 @@ doi17b
 #data_2017 <- filter(CUBoulderPublishedData2014_2017, year == 2017)
 #data_2017
 ```
+
+``` r
+library(tidyverse)
+# Read in CUBoulderOAFund2013_2017 and review the data 
+data <- read.csv('data/StateOfOpenCUBoulderData/CUBoulderPublishedData2014_2017.csv')
+colnames(data)
+```
+
+    ## [1] "Year"                                      
+    ## [2] "Dept"                                      
+    ## [3] "DOI...yes.or.no"                           
+    ## [4] "URL...yes.or.no"                           
+    ## [5] "Repository"                                
+    ## [6] "References..paper..other.data....yes.or.no"
+    ## [7] "License"
+
+``` r
+summary(data)
+```
+
+    ##       Year          Dept           DOI...yes.or.no    URL...yes.or.no   
+    ##  Min.   :2014   Length:87          Length:87          Length:87         
+    ##  1st Qu.:2015   Class :character   Class :character   Class :character  
+    ##  Median :2016   Mode  :character   Mode  :character   Mode  :character  
+    ##  Mean   :2016                                                           
+    ##  3rd Qu.:2017                                                           
+    ##  Max.   :2017                                                           
+    ##   Repository        References..paper..other.data....yes.or.no
+    ##  Length:87          Length:87                                 
+    ##  Class :character   Class :character                          
+    ##  Mode  :character   Mode  :character                          
+    ##                                                               
+    ##                                                               
+    ##                                                               
+    ##    License         
+    ##  Length:87         
+    ##  Class :character  
+    ##  Mode  :character  
+    ##                    
+    ##                    
+    ## 

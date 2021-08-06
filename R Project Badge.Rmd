@@ -134,3 +134,12 @@ doi17b
 #data_2017
 
 ```
+
+```{r}
+library(tidyverse)
+# Read in CUBoulderOAFund2013_2017 and review the data 
+data <- read.csv('data/StateOfOpenCUBoulderData/CUBoulderPublishedData2014_2017.csv')
+colnames(data)
+summary(data)
+
+```
