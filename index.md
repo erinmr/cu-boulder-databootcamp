@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Home
+list_title: Daily Recaps
 ---
 
 ## Welcome to my CU-Boulder Data Bootcamp Site 
