@@ -32,8 +32,7 @@ The findings were:
     faculty reported 33 data sets in 2017 (up from 12 in 2014) with 16
     of these citations including Digital Object Identifiers (DOIs).*
 
-I used data available from CUScholar:  
-  
+I used data available from CUScholar  
 Johnson, A., Caillet, R., Cantrell, M. H., & Mika, K. (2018). Data from
 ‘State of Open at the University of Colorado Boulder’ Report
 *D**a**t**a**s**e**t*
@@ -75,37 +74,55 @@ identify total number of papers.
 ## Finding 2
 
 -   *From 2013 to 2017, the Libraries OA Fund funded author fees
-    totalling $163,522.40 for 116 journal articles published by CU
+    totaling $163,522.40 for 116 journal articles published by CU
     Boulder authors in full OA journals;*
 
-I read in the CUBoulderOAFund2013_2017.csv file and print col names
-
 ``` r
-library(ggstatsplot)
-# Read in CUBoulderOAFund2013_2017
+# call Tidyverse library  
+library(tidyverse)
+
+# Read in CUBoulderOAFund2013_2017.csv
 CUBoulderOAFund2013_2017 <- data.frame(read.csv('data/StateOfOpenCUBoulderData/CUBoulderOAFund2013_2017.csv'))
-colnames(CUBoulderOAFund2013_2017)
+
+# Explore data by printing a summary of the spreadsheet. This tells us there are six variables, 116 rows and all variables are character strings  
+summary(CUBoulderOAFund2013_2017)
 ```
 
-    ## [1] "Date..First.Contact." "Status"               "Department"          
-    ## [4] "Journal.title"        "Publisher"            "Paid.Amount"
+    ##  Date..First.Contact.    Status           Department        Journal.title     
+    ##  Length:116           Length:116         Length:116         Length:116        
+    ##  Class :character     Class :character   Class :character   Class :character  
+    ##  Mode  :character     Mode  :character   Mode  :character   Mode  :character  
+    ##   Publisher         Paid.Amount       
+    ##  Length:116         Length:116        
+    ##  Class :character   Class :character  
+    ##  Mode  :character   Mode  :character
 
 ``` r
+# For Finding 1 we need to sum the column Paid.Amount 
+# First we must convert the column from character to numeric class 
+
+# Special characters need to be removed. Remove the $ and , from the Paid.Amount column and assign new variable, Paid.Amountst  
 Paid.Amountst <- stringr::str_remove_all(CUBoulderOAFund2013_2017$Paid.Amount,"[$,]")
+
+# Convert the Paid.Amountst character string into a number using as.numeric and assign to a new variable Paid.AmountNum 
 Paid.AmountNum <- as.numeric(Paid.Amountst)
-#Paid.AmountNum
+
+# Sum the entire Paid.AmountNum column. There are some fields, so we set na.rm to True. Assign the sum to a new variable called Total.Paid
 Total.Paid <- sum(Paid.AmountNum, na.rm = TRUE)
-Total.Paid
+
+# Print Total.Paid
+cat("$",Total.Paid," equals finding 2 From 2013 to 2017, the Libraries OA Fund funded author fees totaling $163,522.40.")
 ```
 
-    ## [1] 163522.4
+    ## $ 163522.4  equals finding 2 From 2013 to 2017, the Libraries OA Fund funded author fees totaling $163,522.40.
 
 ``` r
+# Each row represents a journal article, so counting the rows with nrow should give the total number of journal articles 
 totaloa2013_2017 <- nrow(CUBoulderOAFund2013_2017)
-totaloa2013_2017
+cat(totaloa2013_2017, "matches the 116 journal articles published by CU Boulder authors in full OA journals from finding 2.")
 ```
 
-    ## [1] 116
+    ## 116 matches the 116 journal articles published by CU Boulder authors in full OA journals from finding 2.
 
 ## Finding 3
 
@@ -113,7 +130,8 @@ totaloa2013_2017
     institutional repository run by the Libraries, and these items were
     downloaded a total of 477,695 times in 2017 alone;*
 
-There was no data included to support this finding.
+The data shared only included journal publications and data. There was
+no data included to support this finding.
 
 ## Finding 4
 
@@ -124,7 +142,7 @@ There was no data included to support this finding.
 
 ``` r
 library(tidyverse)
-# Read in CUBoulderOAFund2013_2017 and review the data 
+# Read in CUBoulderOAFund2013_2017 and review the data. There are 7 variables and 87 rows. All variables are character strings 
 data <- read.csv('data/StateOfOpenCUBoulderData/CUBoulderPublishedData2014_2017.csv')
 colnames(data)
 ```
@@ -164,45 +182,31 @@ summary(data)
     ## 
 
 ``` r
-#Number of citations in 2014
+#Identify the number of datasets in 2014 by filtering data for Year equal to 2014, counting the rows with nrow which equal number of datasets in 2014. Assign the number to a variable data14
 data14 <- nrow(filter(data, Year == '2014'))
-data14
-```
 
-    ## [1] 12
+#Check data14 is correct
+#data14
 
-``` r
-#Number of citations in 2017
+#Repeat process for identifying the number of datasets in 2017 as above for 2014. 
 data17 <- nrow(filter(data, Year == '2017'))
-data17
-```
 
-    ## [1] 33
+#Check data17 is correct
+#data17
 
-``` r
-#Number of citations with a DOI in 2017
-
+#Number of datasets with a DOI in 2017 is found by filtering the table to just datasets from 2017 and assigning that to a variable, doi17a
 doi17a <- filter(data, Year == '2017')
-#view(doi17a)
+
+#doi17a is then filtered again for the variable DOI...yes.or.no equal to yes and nrow is used to count the resulting filtered rows. 
 doi17b <-nrow(filter(doi17a, DOI...yes.or.no =='Yes'))
-doi17b
+
+#check doi17b is correct
+#doi17b
+
+cat("Print results for Finding 4 -> Published datasets became a reportable scholarly activity in the annual Faculty Report of Professional Activities in 2014, and faculty reported", data17, "data sets in 2017 (up from", data14, "in 2014) with", doi17b," of these citations including Digital Object Identifiers (DOIs).")
 ```
 
-    ## [1] 16
-
-``` r
-#Extra analysis not needed 
-#length(data) # number of elements or components
-#str(data)    # structure of an object
-#class(data)  # class or type of an object
-#names(data)  # column names
-
-#view(CUBoulderPublishedData2014_2017)
-#colnames(CUBoulderPublishedData2014_2017)
-#totaloadata2014_2017 <- nrow(CUBoulderPublishedData2014_2017)
-#data_2017 <- filter(CUBoulderPublishedData2014_2017, year == 2017)
-#data_2017
-```
+    ## Print results for Finding 4 -> Published datasets became a reportable scholarly activity in the annual Faculty Report of Professional Activities in 2014, and faculty reported 33 data sets in 2017 (up from 12 in 2014) with 16  of these citations including Digital Object Identifiers (DOIs).
 
 ``` r
 library(tidyverse)
