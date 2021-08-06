@@ -33,22 +33,23 @@ Johnson, A., Caillet, R., Cantrell, M. H., & Mika, K. (2018). Data from 'State o
 
 -   10.20% of all articles published in 2017 by CU Boulder authors were published in full OA journals;
 
-1.  I read in the CUBoulderOAArticles2017.csv file
-
-2.  I count the rows using the nrow function and assign it a variable, totaloa2017
-
-3.  I print the variable, totaloa2017
-
 ```{r, echo = TRUE, message = FALSE}
-library(ggstatsplot)
+# call Tidyverse library  
+library(tidyverse)
+
+# Read in CUBoulderOAArticles2017.csv
 CUBoulderOAArticles2017 <- read.csv('data/StateOfOpenCUBoulderData/CUBoulderOAArticles2017.csv')
+
+# Each row is an Open Access article. Use nrow to count number of rows and assign to variable totaloa2017
 totaloa2017 <- nrow(CUBoulderOAArticles2017)
-totaloa2017
+
+# Write out results 
+cat("From the data provided, it is only possible to get the total number of open access articles ->", totaloa2017)
 ```
 
-From the data provided, it is only possible to get the total number of open access articles. No data is provided for the overall number of publication from CU-Boulder for 2017. There is a reference to CUBE in the text.
+No data is provided for the overall number of publication from CU-Boulder for 2017. There is a reference to CUBE in the text.
 
-It is possible to search the[DataCite Commons for CU-Boulder ROR for 2017](https://commons.datacite.org/ror.org/02ttsq026?rorid=02ttsq026&published=2017). Here we find that there are only 52 works that utilize the ROR that are available. If all research works utilized CU's ROR, we would be able to identify total number of papers.
+Note: It is possible to search the [DataCite Commons for CU-Boulder ROR, organizational identifiers, for 2017](https://commons.datacite.org/ror.org/02ttsq026?rorid=02ttsq026&published=2017). Here we find that there are only 52 works that utilize the ROR that are available. If all research works utilized CU's ROR, we would be able to identify total number of papers published affiliated with CU and then the OA papers/All papers would find % of work published as OA.
 
 ## Finding 2
 
