@@ -3,17 +3,16 @@ layout: home
 title: Home
 ---
 
-## Welcome to my CU-Boulder Data Bootcamp Landing Page 
-I took the [CU-Boulder Data Bootcamp](https://cu-boulder-crdds.github.io/data_bootcamp/). During Day 1, I built this site during the [hands-on portion](https://cu-boulder-crdds.github.io/data_bootcamp/GH_Pages_Materials/GH-Pages-Hands-On.html) and updated as part of the microbadge credential process throughout the course.  
+## Welcome to my CU-Boulder Data Bootcamp Site 
+I took the [CU-Boulder Data Bootcamp](https://cu-boulder-crdds.github.io/data_bootcamp/) from August 3-5, 2021. During Day 1, I built this site during the [hands-on portion](https://cu-boulder-crdds.github.io/data_bootcamp/GH_Pages_Materials/GH-Pages-Hands-On.html) and updated it as part of the microbadge credential process throughout the course.  
 
 
-## My Project 
-Thinking of using https://scholar.colorado.edu/concern/articles/mw22v6063
+## My Project - Recreate key findings from 'State of Open At University of Colorado Baseline report' 
+Following the session on Day 3 that shared CUScholar, I noticed the dataset supporting the 'State of Open at University of Colorado Baseline' report. The report included four key findings and my research question was: 'is it possible to reproduce the finding results with the data shared?'
 
-### Discussion 
-- What are some examples of scholarly data and ethical concerns do you handle/encounter
-- Power and justice resonated 
-- What does the dataset capture 
-- What do I wish I could learn about the data origins 
-- What data are missing? How might that be useful 
-- How might thinking of data as a text change how you document and share your work
+- [Project page](https://erinmr.github.io/cu-boulder-databootcamp-project/R-Project-Badge) and [R Markdown](https://github.com/erinmr/cu-boulder-databootcamp-project/blob/main/R%20Project%20Badge.Rmd) 
+- [Readme for Dataset](https://erinmr.github.io/cu-boulder-databootcamp-project/Readme-Rproject) 
+- [GitHub Project with issues](https://github.com/erinmr/cu-boulder-databootcamp-project/projects/1)
+
+
+
