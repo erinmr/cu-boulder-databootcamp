@@ -32,8 +32,9 @@ theme: minima
 plugins:
   - jekyll-feed
 
-#header_pages:
-#  - 01-about.markdown
+header_pages:
+  - R-Project-Badge
+  - Readme-Rproject
 
 # Exclude from processing.
 # The following items will not be processed, by default.
