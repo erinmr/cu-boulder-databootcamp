@@ -1,5 +1,5 @@
 ---
-title: "Data Readme "
+title: "Data Readme"
 author: "Erin Robinson"
 date: "8/5/2021"
 output:
@@ -12,7 +12,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## General Information 
+## General Information
 
 1\. Title of Dataset: Data from "State of Open at the University of Colorado Boulder" Report
 
@@ -76,7 +76,7 @@ Johnson, A., Caillet, R., Cantrell, M. H., & Mika, K. (2018). Data from 'State o
 
 No relationship specified
 
-## Methodological Information 
+## Methodological Information
 
 ```{r}
 #library(tidyverse)
@@ -100,23 +100,23 @@ No relationship specified
 
 3\. Variable List: Descriptions added by E. Robinson
 
--    \[1\] "Department" - Department at CU-Boulder
+-   \[1\] "Department" - Department at CU-Boulder
 
--    \[2\] "DOI" - Digital Object Identifier
+-   \[2\] "DOI" - Digital Object Identifier
 
--    \[3\] "eISSN" - Electronic International Standard Serial Number
+-   \[3\] "eISSN" - Electronic International Standard Serial Number
 
--    \[4\] "ISSN" - International Standard Serial Number
+-   \[4\] "ISSN" - International Standard Serial Number
 
--    \[5\] "Issue" - Journal Issue
+-   \[5\] "Issue" - Journal Issue
 
--    \[6\] "Title.of.Journal"
+-   \[6\] "Title.of.Journal"
 
--    \[7\] "Language" - Language of publication. Generally English or eng
+-   \[7\] "Language" - Language of publication. Generally English or eng
 
--    \[8\] "Pagination..start.page." - Article start page
+-   \[8\] "Pagination..start.page." - Article start page
 
--    \[9\] "Pagination..end.page." - Article end page
+-   \[9\] "Pagination..end.page." - Article end page
 
 -   \[10\] "Pagination..page.count." - Article number of pages
 
@@ -148,23 +148,23 @@ No relationship specified
 
 3\. Variable List: Descriptions added by E. Robinson
 
--    \[1\] "Department" - Department at CU-Boulder
+-   \[1\] "Department" - Department at CU-Boulder
 
--    \[2\] "DOI" - Digital Object Identifier
+-   \[2\] "DOI" - Digital Object Identifier
 
--    \[3\] "eISSN" - Electronic International Standard Serial Number
+-   \[3\] "eISSN" - Electronic International Standard Serial Number
 
--    \[4\] "ISSN" - International Standard Serial Number
+-   \[4\] "ISSN" - International Standard Serial Number
 
--    \[5\] "Issue" - Journal Issue
+-   \[5\] "Issue" - Journal Issue
 
--    \[6\] "Title.of.Journal"
+-   \[6\] "Title.of.Journal"
 
--    \[7\] "Language" - Language of publication. Generally English or eng
+-   \[7\] "Language" - Language of publication. Generally English or eng
 
--    \[8\] "Pagination..start.page." - Article start page
+-   \[8\] "Pagination..start.page." - Article start page
 
--    \[9\] "Pagination..end.page." - Article end page
+-   \[9\] "Pagination..end.page." - Article end page
 
 -   \[10\] "Pagination..page.count." - Article number of pages
 
@@ -196,23 +196,23 @@ No relationship specified
 
 3\. Variable List: Descriptions added by E. Robinson
 
--    \[1\] "Department" - Department at CU-Boulder
+-   \[1\] "Department" - Department at CU-Boulder
 
--    \[2\] "DOI" - Digital Object Identifier
+-   \[2\] "DOI" - Digital Object Identifier
 
--    \[3\] "eISSN" - Electronic International Standard Serial Number
+-   \[3\] "eISSN" - Electronic International Standard Serial Number
 
--    \[4\] "ISSN" - International Standard Serial Number
+-   \[4\] "ISSN" - International Standard Serial Number
 
--    \[5\] "Issue" - Journal Issue
+-   \[5\] "Issue" - Journal Issue
 
--    \[6\] "Title.of.Journal"
+-   \[6\] "Title.of.Journal"
 
--    \[7\] "Language" - Language of publication. Generally English or eng
+-   \[7\] "Language" - Language of publication. Generally English or eng
 
--    \[8\] "Pagination..start.page." - Article start page
+-   \[8\] "Pagination..start.page." - Article start page
 
--    \[9\] "Pagination..end.page." - Article end page
+-   \[9\] "Pagination..end.page." - Article end page
 
 -   \[10\] "Pagination..page.count." - Article number of pages
 
@@ -244,23 +244,23 @@ No relationship specified
 
 3\. Variable List: Descriptions added by E. Robinson (NOTE Publication date was simplified in 2015)
 
--    \[1\] "Department" - Department at CU-Boulder
+-   \[1\] "Department" - Department at CU-Boulder
 
--    \[2\] "DOI" - Digital Object Identifier
+-   \[2\] "DOI" - Digital Object Identifier
 
--    \[3\] "eISSN" - Electronic International Standard Serial Number
+-   \[3\] "eISSN" - Electronic International Standard Serial Number
 
--    \[4\] "ISSN" - International Standard Serial Number
+-   \[4\] "ISSN" - International Standard Serial Number
 
--    \[5\] "Issue" - Journal Issue
+-   \[5\] "Issue" - Journal Issue
 
--    \[6\] "Title.of.Journal"
+-   \[6\] "Title.of.Journal"
 
--    \[7\] "Language" - Language of publication. Generally English or eng
+-   \[7\] "Language" - Language of publication. Generally English or eng
 
--    \[8\] "Pagination..start.page." - Article start page
+-   \[8\] "Pagination..start.page." - Article start page
 
--    \[9\] "Pagination..end.page." - Article end page
+-   \[9\] "Pagination..end.page." - Article end page
 
 -   \[10\] "Pagination..page.count." - Article number of pages
 
@@ -292,23 +292,23 @@ No relationship specified
 
 3\. Variable List: Descriptions added by E. Robinson (NOTE Publication date changes back to 2012 variables)
 
--    \[1\] "Department" - Department at CU-Boulder
+-   \[1\] "Department" - Department at CU-Boulder
 
--    \[2\] "DOI" - Digital Object Identifier
+-   \[2\] "DOI" - Digital Object Identifier
 
--    \[3\] "eISSN" - Electronic International Standard Serial Number
+-   \[3\] "eISSN" - Electronic International Standard Serial Number
 
--    \[4\] "ISSN" - International Standard Serial Number
+-   \[4\] "ISSN" - International Standard Serial Number
 
--    \[5\] "Issue" - Journal Issue
+-   \[5\] "Issue" - Journal Issue
 
--    \[6\] "Title.of.Journal"
+-   \[6\] "Title.of.Journal"
 
--    \[7\] "Language" - Language of publication. Generally English or eng
+-   \[7\] "Language" - Language of publication. Generally English or eng
 
--    \[8\] "Pagination..start.page." - Article start page
+-   \[8\] "Pagination..start.page." - Article start page
 
--    \[9\] "Pagination..end.page." - Article end page
+-   \[9\] "Pagination..end.page." - Article end page
 
 -   \[10\] "Pagination..page.count." - Article number of pages
 
@@ -340,23 +340,23 @@ No relationship specified
 
 3\. Variable List: Descriptions added by E. Robinson (NOTE Publication date was simplified again in 2017)
 
--    \[1\] "Department" - Department at CU-Boulder
+-   \[1\] "Department" - Department at CU-Boulder
 
--    \[2\] "DOI" - Digital Object Identifier
+-   \[2\] "DOI" - Digital Object Identifier
 
--    \[3\] "eISSN" - Electronic International Standard Serial Number
+-   \[3\] "eISSN" - Electronic International Standard Serial Number
 
--    \[4\] "ISSN" - International Standard Serial Number
+-   \[4\] "ISSN" - International Standard Serial Number
 
--    \[5\] "Issue" - Journal Issue
+-   \[5\] "Issue" - Journal Issue
 
--    \[6\] "Title.of.Journal"
+-   \[6\] "Title.of.Journal"
 
--    \[7\] "Language" - Language of publication. Generally English or eng
+-   \[7\] "Language" - Language of publication. Generally English or eng
 
--    \[8\] "Pagination..start.page." - Article start page
+-   \[8\] "Pagination..start.page." - Article start page
 
--    \[9\] "Pagination..end.page." - Article end page
+-   \[9\] "Pagination..end.page." - Article end page
 
 -   \[10\] "Pagination..page.count." - Article number of pages
 
@@ -384,17 +384,17 @@ No relationship specified
 
 3\. Variable List:
 
-	A. Date..First.Contact. - ???
+    A. Date..First.Contact. - ???
 
-	B. Status - Career status
+    B. Status - Career status
 
-	C. Department - CU Boulder Department
+    C. Department - CU Boulder Department
 
-	D. Journal.title
+    D. Journal.title
 
-	E. Publisher
+    E. Publisher
 
-	F. Paid.Amount - Open Access fee paid up to \$2000
+    F. Paid.Amount - Open Access fee paid up to \$2000
 
 4\. Data codes (e.g., N/A = Not applicable): Unknown are blank
 
@@ -406,18 +406,18 @@ No relationship specified
 
 3\. Variable List:
 
-	\[1\] "Year"
+    \[1\] "Year"
 
-	\[2\] "Dept" - CU Boulder Department
+    \[2\] "Dept" - CU Boulder Department
 
-	\[3\] "DOI...yes.or.no"
+    \[3\] "DOI...yes.or.no"
 
-	\[4\] "URL...yes.or.no"
+    \[4\] "URL...yes.or.no"
 
-	\[5\] "Repository"
+    \[5\] "Repository"
 
-	\[6\] "References..paper..other.data....yes.or.no"
+    \[6\] "References..paper..other.data....yes.or.no"
 
-	\[7\] "License"
+    \[7\] "License"
 
 4\. Data codes (e.g., N/A = Not applicable): Unknown are blank

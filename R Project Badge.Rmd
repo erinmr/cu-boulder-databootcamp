@@ -26,7 +26,7 @@ The findings were:
 
 -   *Published data sets became a reportable scholarly activity in the annual Faculty Report of Professional Activities in 2014, and faculty reported 33 data sets in 2017 (up from 12 in 2014) with 16 of these citations including Digital Object Identifiers (DOIs).*
 
-I used data available from CUScholar \
+I used data available from CUScholar\
 Johnson, A., Caillet, R., Cantrell, M. H., & Mika, K. (2018). Data from 'State of Open at the University of Colorado Boulder' Report \[Data set\]. University Libraries, University of Colorado Boulder. <https://doi.org/10.25810/ZNB1-3K90>
 
 ## Finding 1
@@ -43,11 +43,18 @@ CUBoulderOAArticles2017 <- read.csv('data/StateOfOpenCUBoulderData/CUBoulderOAAr
 # Each row is an Open Access article. Use nrow to count number of rows and assign to variable totaloa2017
 totaloa2017 <- nrow(CUBoulderOAArticles2017)
 
-# Write out results 
-cat("From the data provided, it is only possible to get the total number of open access articles ->", totaloa2017)
+# Write out results for total number of OA articles
+cat("From the data provided, it is possible to get the total number of open access articles ->", totaloa2017,".")
+
+# Calculate percentage based on average annually number reported in report
+perctotal0a2017 <- totaloa2017/5000*100
+
+# Write out results for percentage of total number of OA articles compared to total number of papers 
+cat(" The report indicated that CU Boulder publishes around 5000 papers annually. From that statement the percent of OA papers ->", perctotal0a2017, "%. ")
+
 ```
 
-No data is provided for the overall number of publication from CU-Boulder for 2017. There is a reference to CUBE in the text.
+No data is provided for the overall number of publication from CU-Boulder for 2017. There is a reference to CU publishing around 5000 papers annually and to CUBE in the text.
 
 Note: It is possible to search the [DataCite Commons for CU-Boulder ROR, organizational identifiers, for 2017](https://commons.datacite.org/ror.org/02ttsq026?rorid=02ttsq026&published=2017). Here we find that there are only 52 works that utilize the ROR that are available. If all research works utilized CU's ROR, we would be able to identify total number of papers published affiliated with CU and then the OA papers/All papers would find % of work published as OA.
 

@@ -54,14 +54,25 @@ CUBoulderOAArticles2017 <- read.csv('data/StateOfOpenCUBoulderData/CUBoulderOAAr
 # Each row is an Open Access article. Use nrow to count number of rows and assign to variable totaloa2017
 totaloa2017 <- nrow(CUBoulderOAArticles2017)
 
-# Write out results 
-cat("From the data provided, it is only possible to get the total number of open access articles ->", totaloa2017)
+# Write out results for total number of OA articles
+cat("From the data provided, it is possible to get the total number of open access articles ->", totaloa2017,".")
 ```
 
-    ## From the data provided, it is only possible to get the total number of open access articles -> 506
+    ## From the data provided, it is possible to get the total number of open access articles -> 506 .
+
+``` r
+# Calculate percentage based on average annually number reported in report
+perctotal0a2017 <- totaloa2017/5000*100
+
+# Write out results for percentage of total number of OA articles compared to total number of papers 
+cat(" The report indicated that CU Boulder publishes around 5000 papers annually. From that statement the percent of OA papers ->", perctotal0a2017, "%. ")
+```
+
+    ##  The report indicated that CU Boulder publishes around 5000 papers annually. From that statement the percent of OA papers -> 10.12 %.
 
 No data is provided for the overall number of publication from
-CU-Boulder for 2017. There is a reference to CUBE in the text.
+CU-Boulder for 2017. There is a reference to CU publishing around 5000
+papers annually and to CUBE in the text.
 
 Note: It is possible to search the [DataCite Commons for CU-Boulder ROR,
 organizational identifiers, for
