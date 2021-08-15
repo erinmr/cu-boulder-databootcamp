@@ -5,7 +5,7 @@ output:
   md_document:
     preserve_yaml: true
     variant: markdown_github
-title: R Project Dataset Eval
+title: Dataset Eval
 ---
 
 # FAIR Dataset Evaluation
