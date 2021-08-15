@@ -10,6 +10,10 @@ title: Data Readme
 
 ## General Information
 
+The readme is based on [this
+example](https://drive.google.com/file/d/1h_iBgq3HY0yXyJXDwWpi80GMC2Z4fO9U/view)
+shared during out bootcamp.
+
 1\. Title of Dataset: Data from “State of Open at the University of
 Colorado Boulder” Report
 
