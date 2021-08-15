@@ -38,7 +38,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 1\. Licenses/restrictions placed on the data:
 
-in Copyright
+in Copyright and [Creative Commons BY Attribution 4.0 International](https://scholar.colorado.edu/catalog?q=http://creativecommons.org/licenses/by/4.0/&search_field=license)
 
 2\. Links to publications that cite or use the data:
 
@@ -312,7 +312,7 @@ No relationship specified
 
 -   \[10\] "Pagination..page.count." - Article number of pages
 
--   \[11\] "Publication.date" - Variety of different kinds of dates in single column. Format is Year or YYYY-MM or MM/DD/YY
+-   \[11\] "Publication.date.OR.Publication.date.or.Presentation.Date.OR.Presentation.date.OR.Presented.date.OR.Date.awarded.OR.Date" - Variety of different kinds of dates in single column. Format is Year or YYYY-MM or MM/DD/YY"
 
 -   \[12\] "Publisher"
 

@@ -35,7 +35,8 @@ Colorado Boulder” Report
 
 1\. Licenses/restrictions placed on the data:
 
-in Copyright
+in Copyright and [Creative Commons BY Attribution 4.0
+International](https://scholar.colorado.edu/catalog?q=http://creativecommons.org/licenses/by/4.0/&search_field=license)
 
 2\. Links to publications that cite or use the data:
 
@@ -490,8 +491,9 @@ date changes back to 2012 variables)
 
 -   
     11
-    “Publication.date” - Variety of different kinds of dates in single
-    column. Format is Year or YYYY-MM or MM/DD/YY
+    “Publication.date.OR.Publication.date.or.Presentation.Date.OR.Presentation.date.OR.Presented.date.OR.Date.awarded.OR.Date” -
+    Variety of different kinds of dates in single column. Format is Year
+    or YYYY-MM or MM/DD/YY”
 
 -   
     12
